@@ -20,7 +20,7 @@ having total_amount > 55000
   </h3>
 
 
-<h3> 2.5 ระบุชื่อลูกค้าและจำนวนคำสั่งขายของลูกค้าทั้งหมดที่มีชื่อขึ้นต้นด้วยตัวอักษร 'D' ตั้งชื่อจำนวนคอลัมน์ใบสั่งขายเป็น “num_orders” </h3>
+<h1> 2.5 ระบุชื่อลูกค้าและจำนวนคำสั่งขายของลูกค้าทั้งหมดที่มีชื่อขึ้นต้นด้วยตัวอักษร 'D' ตั้งชื่อจำนวนคอลัมน์ใบสั่งขายเป็น “num_orders” </h1>
 2.5 List the customer name and the number of sales orders of all customers whose name start with the letter ‘D’. Name the number of sales orders column to “num_orders”.
 
 <h3>
