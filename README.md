@@ -29,3 +29,14 @@ from customers c join orders o on c.customerNumber = o.customerNumber
 where customerName like 'D%'
 group by customerName;
  </h3>
+
+
+<h1>ระบุชื่อลูกค้าและจำนวนใบสั่งขายของลูกค้าทั้งหมดที่อาศัยอยู่ในประเทศที่ชื่อว่า USA และจำนวนใบสั่งขายมากกว่า 10 ตั้งชื่อคอลัมน์จำนวนใบสั่งขายเป็น "num_orders"    ใช้ where กับ having</h1>
+<h3>List the customer name and the number of sales orders of all customers who live in the country named USA and the number of sales orders is greater than 10. Name the number of sales orders column to “num_orders”.</h3>
+<h3>
+select c.customerName, count(o.orderNumber) as num_orders
+from customers c join orders o on c.customerNumber = o.customerNumber
+where country = 'USA' 
+group by customerName
+having num_orders > 10;
+ </h3>
