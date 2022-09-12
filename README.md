@@ -40,3 +40,18 @@ where country = 'USA'
 group by customerName
 having num_orders > 10;
  </h3>
+
+
+<h1>ระบุชื่อผลิตภัณฑ์ ราคา และปริมาณการสั่งซื้อของหมายเลขคำสั่งซื้อ 10124 จัดเรียงผลลัพธ์ตามลำดับจากน้อยไปมากตามชื่อผลิตภัณฑ์</h1>
+\
+select p.productname,o.priceEach,o.quantityOrdered
+from orderdetails o join products p on o.productCode = p.productCode
+where orderNumber = '10124'
+group by productname 
+order by productName asc;
+
+--Ans1select productname,  priceeach, quantityordered
+from products p join orderdetails od on p.productcode = od.productcode
+join orders o on od.ordernumber = o.ordernumber
+where o.ordernumber = 10124
+order by productname;\
